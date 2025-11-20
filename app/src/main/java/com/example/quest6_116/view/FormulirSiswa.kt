@@ -61,5 +61,13 @@ fun FormSiswa(
                 thickness = 1.dp,
                 color = Color.Red
             )
+            Row {
+                pilihanJK.forEach { item ->
+                    Row(modifier = Modifier.selectable(
+                        selected = txtGender == item,
+                        onClick = {
+                            txtGender = item
+                        }
+                    ),
         }
 
