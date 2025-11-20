@@ -56,5 +56,10 @@ fun FormSiswa(
                     .width(350.dp),
                 label = { Text("Nama Lengkap") }
             )
+            HorizontalDivider(
+                modifier = Modifier.padding(12.dp).width(350.dp),
+                thickness = 1.dp,
+                color = Color.Red
+            )
         }
 
