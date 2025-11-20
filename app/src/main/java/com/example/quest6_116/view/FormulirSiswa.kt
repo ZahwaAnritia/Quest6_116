@@ -14,6 +14,7 @@ import androidx.compose.ui.unit.dp
 import com.example.quest6_116.R
 import com.example.quest6_116.ui.theme.Quest6_116Theme
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormSiswa(
     pilihanJK: List<String>,
