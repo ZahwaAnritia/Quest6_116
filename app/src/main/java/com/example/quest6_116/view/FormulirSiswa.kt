@@ -46,4 +46,15 @@ fun FormSiswa(
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            OutlinedTextField(
+                value = txtNama,
+                shape = MaterialTheme.shapes.medium,
+                onValueChange = { txtNama = it },
+                singleLine = true,
+                modifier = Modifier
+                    .padding(top = 20.dp)
+                    .width(350.dp),
+                label = { Text("Nama Lengkap") }
+            )
+        }
 
