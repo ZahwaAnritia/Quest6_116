@@ -56,7 +56,9 @@ fun FormSiswa(
                     .padding(top = 20.dp)
                     .width(350.dp),
                 label = { Text("Nama Lengkap") }
+
             )
+            Spacer(modifier = Modifier.height(10.dp))
             HorizontalDivider(
                 modifier = Modifier.padding(12.dp).width(350.dp),
                 thickness = 1.dp,
@@ -82,10 +84,11 @@ fun FormSiswa(
                 }
             }
             HorizontalDivider(
-                modifier = Modifier.padding(20.dp).width(250.dp),
+                modifier = Modifier.padding(12.dp).width(350.dp),
                 thickness = 1.dp,
                 color = Color.Red
             )
+
             OutlinedTextField(
                 value = txtAlamat,
                 onValueChange = { txtAlamat = it },
